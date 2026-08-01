@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Test Route
 app.get("/", (req, res) => {
-    res.send("StrongWeld Backend Running 🚀");
+    res.send("SK1 Welding Workshop Backend Running 🚀");
 });
 
 // API Routes

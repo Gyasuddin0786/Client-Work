@@ -1,11 +1,5 @@
-import axios from "axios";
+import api from "../config/api";
 
-const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
-});
-
-export const submitContact = async (data) => {
-  const response = await API.post("/api/contact", data);
-
-  return response.data;
+export const submitContact = (data) => {
+  return api.post("/contact", data);
 };
