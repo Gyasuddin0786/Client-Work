@@ -1,0 +1,17 @@
+# ==========================================
+# robots.txt
+# SK 1 Welding Workshop
+# ==========================================
+
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Block unnecessary folders
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml

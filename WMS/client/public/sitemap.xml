@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+  <url>
+      <loc>https://yourdomain.com/</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/about</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/portfolio</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/request-quote</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/contact</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/privacy-policy</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/terms</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/gate-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/railing-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/grill-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/shed-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/staircase-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/welding-repair</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/structural-welding</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/custom-metal-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+  <url>
+      <loc>https://yourdomain.com/services/steel-fabrication</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+  </url>
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/modern-main-gate</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/balcony-railing</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/window-safety-grills</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/parking-shed</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/outdoor-metal-staircase</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/gate-repair-reinforcement</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/commercial-metal-frame</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://yourdomain.com/portfolio/custom-metal-stand</loc>
+      <lastmod>2026-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+
+</urlset>

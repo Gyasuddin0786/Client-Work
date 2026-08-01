@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Testimonials css */
+.testimonialSwiper {
+  padding-bottom: 55px;
+}
+
+.testimonialSwiper .swiper-slide {
+  height: auto;
+}
+
+.testimonialSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d8e5f8;
+  opacity: 1;
+  transition: .3s;
+}
+
+.testimonialSwiper .swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 999px;
+  background: #f97316;
+}
