@@ -1,4 +1,4 @@
-import { Target } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import Container from "../../components/common/Container";
 import SectionHeading from "../../components/common/SectionHeading";
 import Button from "../../components/common/Button";
