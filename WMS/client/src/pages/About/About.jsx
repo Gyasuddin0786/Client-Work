@@ -1,14 +1,19 @@
 import Container from "../../components/common/Container";
 import SectionHeading from "../../components/common/SectionHeading";
 import Button from "../../components/common/Button";
-
+import { Helmet } from "react-helmet-async";
 import WhyChooseUsSection from "../../components/sections/WhyChooseUs";
 import ProcessSection from "../../components/sections/ProcessSection";
 import CTASection from "../../components/sections/CTASection";
-import { Target, Eye } from "lucide-react";
+import SEO from "../../components/common/SEO";
 function About() {
   return (
     <>
+      <SEO
+        title="About SK 1 Welding Workshop"
+        description="Learn about SK 1 Welding Workshop, our experience, quality workmanship and steel & metal fabrication services."
+        keywords="about welding workshop, fabrication company, steel fabrication, metal fabrication, welding services, SK 1 Welding Workshop"
+      />
       <section className="py-14 bg-gray-50">
         <Container>
           <SectionHeading
@@ -33,10 +38,11 @@ function About() {
               </h2>
 
               <p className="mt-6 leading-8 text-slate-600">
-                We provide custom steel & welding and fabrication services based on each
-                client's requirements. Whether it's gates, railings, grills,
-                staircases, sheds, or structural fabrication, every project is
-                planned carefully to achieve a durable and practical result.
+                We provide custom steel & welding and fabrication services based
+                on each client's requirements. Whether it's gates, railings,
+                grills, staircases, sheds, or structural fabrication, every
+                project is planned carefully to achieve a durable and practical
+                result.
               </p>
 
               <p className="mt-6 leading-8 text-slate-600">
@@ -45,10 +51,7 @@ function About() {
                 needs.
               </p>
 
-              <Button
-                to="/request-quote"
-                className="mt-8"
-              >
+              <Button to="/request-quote" className="mt-8">
                 Request a Quote
               </Button>
             </div>
@@ -97,15 +100,13 @@ function About() {
                   <Target className="h-7 w-7" />
                 </div>
 
-                <h2 className="text-2xl font-bold">
-                  Our Mission
-                </h2>
+                <h2 className="text-2xl font-bold">Our Mission</h2>
               </div>
 
               <p className="mt-6 leading-8 text-slate-600">
-                To provide dependable welding and fabrication services with quality
-                workmanship, transparent communication, and solutions tailored to every
-                project.
+                To provide dependable welding and fabrication services with
+                quality workmanship, transparent communication, and solutions
+                tailored to every project.
               </p>
             </article>
             <article
@@ -144,14 +145,13 @@ function About() {
                   <Eye className="h-7 w-7" />
                 </div>
 
-                <h2 className="text-2xl font-bold">
-                  Our Vision
-                </h2>
+                <h2 className="text-2xl font-bold">Our Vision</h2>
               </div>
 
               <p className="mt-6 leading-8 text-slate-600">
-                To become a trusted fabrication partner by consistently delivering
-                reliable work and building long-term customer relationships.
+                To become a trusted fabrication partner by consistently
+                delivering reliable work and building long-term customer
+                relationships.
               </p>
             </article>
           </div>

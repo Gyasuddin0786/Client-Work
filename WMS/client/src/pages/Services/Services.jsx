@@ -7,26 +7,31 @@ import Container from "../../components/common/Container";
 import SectionHeading from "../../components/common/SectionHeading";
 import Testimonials from "../../components/sections/Testimonials";
 import CTASection from "../../components/sections/CTASection";
-
+import SEO from "../../components/common/SEO";
 function Services() {
   return (
     <>
-    <section className="py-14 bg-gray-50">
-      <Container>
-        <SectionHeading
-          eyebrow="Services"
-          title="Welding & Fabrication Services"
-          description="Explore our complete range of welding and fabrication services for residential and commercial projects."
-          align="center"
-        />
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service) => {
-            const Icon = service.icon;
+      <SEO
+        title="Steel & Metal Fabrication Services | SK 1 Welding Workshop"
+        description="Explore professional steel and metal fabrication services including MS & SS gates, railings, grills, staircases, sheds, canopies, welding, and custom metal fabrication for residential, commercial, and industrial projects."
+        keywords="steel fabrication services, metal fabrication services, welding services, MS fabrication, SS fabrication, main gate fabrication, steel railing, staircase fabrication, grill fabrication, shed fabrication, canopy fabrication, custom metal fabrication, industrial fabrication, SK 1 Welding Workshop"
+      />
+      <section className="py-14 bg-gray-50">
+        <Container>
+          <SectionHeading
+            eyebrow="Services"
+            title="Welding & Fabrication Services"
+            description="Explore our complete range of welding and fabrication services for residential and commercial projects."
+            align="center"
+          />
+          <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {services.map((service) => {
+              const Icon = service.icon;
 
-            return (
-              <article
-                key={service.id}
-                className="
+              return (
+                <article
+                  key={service.id}
+                  className="
 group
 relative
 flex
@@ -43,38 +48,39 @@ hover:-translate-y-2
 hover:border-orange-400
 hover:shadow-[0_20px_45px_rgba(249,115,22,0.18)]
 "
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-100 text-orange-600 transition-colors group-hover:bg-orange-600 group-hover:text-white">
-                  <Icon className="h-7 w-7" />
-                </div>
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-100 text-orange-600 transition-colors group-hover:bg-orange-600 group-hover:text-white">
+                    <Icon className="h-7 w-7" />
+                  </div>
 
-                <h2 className="mt-6 text-2xl font-semibold">
-                  {service.name}
-                </h2>
+                  <h2 className="mt-6 text-2xl font-semibold">
+                    {service.name}
+                  </h2>
 
-                <p className="mt-4 flex-grow leading-7 text-slate-600">
-                  {service.shortDescription}
-                </p>
+                  <p className="mt-4 flex-grow leading-7 text-slate-600">
+                    {service.shortDescription}
+                  </p>
 
-                <div className="mt-8">
-                  <Button className="hover:border-orange-300
+                  <div className="mt-8">
+                    <Button
+                      className="hover:border-orange-300
     hover:bg-orange-50
     hover:text-orange-600"
-                    to={`/services/${service.slug}`}
-                    variant="ghost"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </Container>
-      <Testimonials/>
-    </section>
-    <CTASection/>
+                      to={`/services/${service.slug}`}
+                      variant="ghost"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </Container>
+        <Testimonials />
+      </section>
+      <CTASection />
     </>
   );
 }
