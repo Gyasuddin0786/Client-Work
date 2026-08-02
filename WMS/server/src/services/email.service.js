@@ -14,7 +14,7 @@ import {
   messageIcon,
 } from "../utils/icons.js";
 const companyName = "SK 1 Welding Workshop";
-const companyWebsite = "https://yourdomain.com";
+const companyWebsite = "https://sk1-welding-workshop.vercel.app";
 const primaryColor = "#ea580c";
 const darkColor = "#111827";
 const lightBg = "#f3f4f6";
