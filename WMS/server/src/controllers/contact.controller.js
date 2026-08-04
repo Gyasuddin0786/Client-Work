@@ -8,6 +8,7 @@ export const createContact = async (req, res) => {
   try {
     const { fullName, phone, email, subject, message } = req.body;
 
+    // Validation
     if (!fullName || !phone || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -15,6 +16,7 @@ export const createContact = async (req, res) => {
       });
     }
 
+    // Save Contact
     const contact = await Contact.create({
       fullName,
       phone,
@@ -23,28 +25,31 @@ export const createContact = async (req, res) => {
       message,
     });
 
-    // Wait for emails (testing)
-    const ownerMail = await sendContactNotification(contact);
-    console.log("✅ Owner Mail:", ownerMail.messageId);
-
-    const customerMail = await sendAutoReply({
-      fullName,
-      email,
-    });
-    console.log("✅ Customer Mail:", customerMail.messageId);
-
-    return res.status(201).json({
+    // Send Response Immediately
+    res.status(201).json({
       success: true,
       message: "Your enquiry has been submitted successfully.",
       data: contact,
     });
 
+    // Background Email to Owner
+    sendContactNotification(contact).catch((error) => {
+      console.error("Company Email Error:", error.message);
+    });
+
+    // Background Auto Reply
+    sendAutoReply({
+      fullName,
+      email,
+    }).catch((error) => {
+      console.error("Auto Reply Error:", error.message);
+    });
   } catch (error) {
     console.error("Create Contact Error:", error);
 
     return res.status(500).json({
       success: false,
-      message: error.message,
+      message: "Internal Server Error",
     });
   }
 };
