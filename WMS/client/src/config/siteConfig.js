@@ -66,7 +66,7 @@ export const siteConfig = {
   // Website URLs
   // ==========================
   urls: {
-    website: "https://yourwebsite.com",
+    website: "https://sk1-welding-workshop.vercel.app",
 
     requestQuote: "/request-quote",
 
