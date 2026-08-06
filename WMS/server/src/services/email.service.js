@@ -114,7 +114,7 @@ text-align:center;
 ">
 
 <img
-src="https://res.cloudinary.com/xrvsqb8z/image/upload/v1785586447/wmqxtj4pjviacjkekmp0.png"
+src="https://res.cloudinary.com/xrvsqb8z/image/upload/v1785586753/qz4jjppxlxmrzcyverxz.png"
 alt="${companyName}"
 width="120"
 style="
