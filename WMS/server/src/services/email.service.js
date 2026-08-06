@@ -114,16 +114,10 @@ Visit Our Website
 `;
 
 export const sendContactNotification = async (data) => {
-  const {
-    fullName,
-    phone,
-    email,
-    subject,
-    message
-  } = data;
+  const { fullName, phone, email, subject, message } = data;
 
   return transporter.sendMail({
-    from: `"SK 1 Welding Workshop" <${process.env.EMAIL_USER}>`,
+    from: `"SK 1 Welding Workshop" <${process.env.COMPANY_EMAIL}>`,
 
     to: [process.env.COMPANY_EMAIL],
 
@@ -171,23 +165,19 @@ export const sendContactNotification = async (data) => {
 </tr>
 
 </table>
-`
-    )
+`,
+    ),
   });
 };
 
 export const sendQuoteNotification = async (data) => {
-
- return transporter.sendMail({
-
-     from: `"SK 1 Welding Workshop" <${process.env.EMAIL_USER}>`,
-
+  return transporter.sendMail({
+    from: `"SK 1 Welding Workshop" <${process.env.COMPANY_EMAIL}>`,
     to: [process.env.COMPANY_EMAIL],
 
     subject: `New Quote Request - ${data.fullName}`,
 
     html: emailLayout(
-
       "New Quote Request",
 
       "A customer has requested a quotation from the website.",
@@ -261,8 +251,9 @@ export const sendQuoteNotification = async (data) => {
 </table>
 
 
- ${data.images?.length
-        ? `
+ ${
+   data.images?.length
+     ? `
       <div style="margin-top:25px;">
         <strong>Project Images</strong><br><br>
 
@@ -281,30 +272,26 @@ export const sendQuoteNotification = async (data) => {
                   View Full Image
                 </a>
               </div>
-            `
+            `,
           )
           .join("")}
 
       </div>
     `
-        : ""
-      }
-      `
-    )
+     : ""
+ }
+      `,
+    ),
   });
 };
 export const sendAutoReply = async (data) => {
-
   return transporter.sendMail({
-
-     from: `"SK 1 Welding Workshop" <${process.env.EMAIL_USER}>`,
-
-     to: data.email,
+    from: `"SK 1 Welding Workshop" <${process.env.COMPANY_EMAIL}>`,
+    to: data.email,
 
     subject: "✅ We've Received Your Request",
 
     html: emailLayout(
-
       `Thank You, ${data.fullName}!`,
 
       `We appreciate your interest in SK 1 Welding Workshop.`,
@@ -351,9 +338,7 @@ Thank you for trusting
 
 </p>
 
-`
-    )
-
+`,
+    ),
   });
-
 };
