@@ -1,11 +1,14 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import dns from "dns";
+
 import contactRoutes from "./routes/contact.routes.js";
 import quoteRoutes from "./routes/quote.routes.js";
 dotenv.config();
 
 const app = express();
+dns.setDefaultResultOrder("ipv4first");
 
 // Middleware
 app.use(
