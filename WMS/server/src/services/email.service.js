@@ -114,13 +114,11 @@ text-align:center;
 ">
 
 <img
-src="https://res.cloudinary.com/xrvsqb8z/image/upload/v1785586753/qz4jjppxlxmrzcyverxz.png"
-alt="${companyName}"
-width="120"
-style="
-display:block;
-margin:0 auto 15px;
-">
+  src="https://res.cloudinary.com/xrvsqb8z/image/upload/v1785678559/strongweld/cp8cuhjak6ywdr0pvjrj.png"
+  alt="SK 1 Welding Workshop"
+  width="120"
+  style="display:block;margin:0 auto 15px auto;"
+/>
 
 <h1
 style="
